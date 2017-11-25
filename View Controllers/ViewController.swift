@@ -21,6 +21,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var roundedShadowView: roundedViewClass!
+    @IBOutlet weak var lessRoundedView: roundedViewClass!
     
     
     override func viewDidLoad() {

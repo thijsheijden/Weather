@@ -60,6 +60,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qxf-Hu-fUa" customClass="roundedViewClass" customModule="Weather" customModuleProvider="target">
+                                <rect key="frame" x="16" y="214" width="343" height="564"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.49803921568627452" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -67,6 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="WRY-yt-OYd" id="ZWS-Bb-A4s"/>
+                        <outlet property="lessRoundedView" destination="Qxf-Hu-fUa" id="Em2-83-uLW"/>
                         <outlet property="roundedShadowView" destination="z0a-Ym-uGc" id="va2-X0-23U"/>
                         <outlet property="temperatureLabel" destination="tho-J8-q0b" id="799-bl-gXI"/>
                         <outlet property="weatherIcon" destination="iUR-TX-Ltg" id="eXf-sD-0Gy"/>
@@ -74,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45.600000000000001" y="33.733133433283363"/>
+            <point key="canvasLocation" x="45.600000000000001" y="33.251231527093594"/>
         </scene>
     </scenes>
     <resources>
