@@ -19,6 +19,9 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
     
+    @IBOutlet weak var rainLabel: UILabel!
+    @IBOutlet weak var cloudinessLabel: UILabel!
+    @IBOutlet weak var windSpeedLabel: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -63,6 +66,9 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         weatherDataModel.city = json["name"].stringValue
         weatherDataModel.condition = json["weather"][0]["id"].intValue
         weatherDataModel.weatherIconName = weatherDataModel.updateWeatherIcon(condition: weatherDataModel.condition)
+        weatherDataModel.windSpeed = json["wind"]["speed"].intValue
+        weatherDataModel.cloudiness = json["clouds"]["all"].intValue
+        weatherDataModel.rain3h = json["rain"]["3h"].intValue
             
         updateUIWithWeatherData()
         } else {
@@ -77,6 +83,9 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         cityLabel.text = weatherDataModel.city
         temperatureLabel.text = "\(weatherDataModel.temperature)°"
         weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
+        windSpeedLabel.text = "\(weatherDataModel.windSpeed) km/h"
+        cloudinessLabel.text = "\(weatherDataModel.cloudiness)%"
+        rainLabel.text = "\(weatherDataModel.rain3h) mm/cm²"
         
     }
     

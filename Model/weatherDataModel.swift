@@ -13,7 +13,9 @@ class WeatherDataModel {
 
     var temperature: Int = 0
     var condition: Int = 0
-    var humidity: Int = 0
+    var windSpeed: Int = 0
+    var cloudiness: Int = 0
+    var rain3h: Int = 0
     var city: String = ""
     var weatherIconName: String = ""
     
