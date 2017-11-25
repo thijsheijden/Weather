@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import CoreLocation
 
 
-class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     
     let WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
     let APP_ID = "f66339fb95d71679725ea7838ff16193"
     
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
@@ -24,14 +26,20 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //TODO:Set up the location manager here.
-        
-        
-        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        locationManager.requestWhenInUseAuthorization()
     }
     
+    //MARK: Networking
     
+    //MARK: JSON Parsing
+    
+    //MARK: UI Updates
+    
+    //MARK: Location manager
+    
+    //MARK: TabelViews
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
