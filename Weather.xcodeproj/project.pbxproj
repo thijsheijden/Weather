@@ -52,10 +52,8 @@
 		767D51751FC9B0C2008E5B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767D517A1FC9B0C2008E5B19 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		767D517E1FC9B0C2008E5B19 /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
-		767D51801FC9B0C2008E5B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767D51851FC9B0C2008E5B19 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		767D51891FC9B0C2008E5B19 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
-		767D518B1FC9B0C2008E5B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767D519B1FC9B56E008E5B19 /* weatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherDataModel.swift; sourceTree = "<group>"; };
 		767D51A01FC9B7F6008E5B19 /* roundedViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedViewClass.swift; sourceTree = "<group>"; };
 		83E0972AED1E68901854E68C /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				767D517E1FC9B0C2008E5B19 /* WeatherTests.swift */,
-				767D51801FC9B0C2008E5B19 /* Info.plist */,
 			);
 			path = WeatherTests;
 			sourceTree = "<group>";
@@ -142,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				767D51891FC9B0C2008E5B19 /* WeatherUITests.swift */,
-				767D518B1FC9B0C2008E5B19 /* Info.plist */,
 			);
 			path = WeatherUITests;
 			sourceTree = "<group>";

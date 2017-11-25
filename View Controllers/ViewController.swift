@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 
 
-class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
+class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     let WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
     let APP_ID = "f66339fb95d71679725ea7838ff16193"
@@ -38,16 +38,6 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: UI Updates
     
     //MARK: Location manager
-    
-    //MARK: TabelViews
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        return cell
-    }
     
     
 }
