@@ -14,6 +14,8 @@
 		767D51741FC9B0C2008E5B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767D51721FC9B0C2008E5B19 /* LaunchScreen.storyboard */; };
 		767D517F1FC9B0C2008E5B19 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D517E1FC9B0C2008E5B19 /* WeatherTests.swift */; };
 		767D518A1FC9B0C2008E5B19 /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D51891FC9B0C2008E5B19 /* WeatherUITests.swift */; };
+		767D519C1FC9B56E008E5B19 /* weatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D519B1FC9B56E008E5B19 /* weatherDataModel.swift */; };
+		767D51A11FC9B7F6008E5B19 /* roundedViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D51A01FC9B7F6008E5B19 /* roundedViewClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		767D51851FC9B0C2008E5B19 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		767D51891FC9B0C2008E5B19 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		767D518B1FC9B0C2008E5B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767D519B1FC9B56E008E5B19 /* weatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherDataModel.swift; sourceTree = "<group>"; };
+		767D51A01FC9B7F6008E5B19 /* roundedViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedViewClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,10 @@
 		767D515D1FC9B0C2008E5B19 = {
 			isa = PBXGroup;
 			children = (
+				767D519F1FC9B7EA008E5B19 /* Classes */,
+				767D519A1FC9B4F8008E5B19 /* Model */,
+				767D51991FC9B4DA008E5B19 /* View Controllers */,
+				767D51971FC9B4CA008E5B19 /* Storyboards */,
 				767D51681FC9B0C2008E5B19 /* Weather */,
 				767D517D1FC9B0C2008E5B19 /* WeatherTests */,
 				767D51881FC9B0C2008E5B19 /* WeatherUITests */,
@@ -98,10 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				767D51691FC9B0C2008E5B19 /* AppDelegate.swift */,
-				767D516B1FC9B0C2008E5B19 /* ViewController.swift */,
-				767D516D1FC9B0C2008E5B19 /* Main.storyboard */,
 				767D51701FC9B0C2008E5B19 /* Assets.xcassets */,
-				767D51721FC9B0C2008E5B19 /* LaunchScreen.storyboard */,
 				767D51751FC9B0C2008E5B19 /* Info.plist */,
 			);
 			path = Weather;
@@ -123,6 +128,39 @@
 				767D518B1FC9B0C2008E5B19 /* Info.plist */,
 			);
 			path = WeatherUITests;
+			sourceTree = "<group>";
+		};
+		767D51971FC9B4CA008E5B19 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				767D51721FC9B0C2008E5B19 /* LaunchScreen.storyboard */,
+				767D516D1FC9B0C2008E5B19 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		767D51991FC9B4DA008E5B19 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				767D516B1FC9B0C2008E5B19 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		767D519A1FC9B4F8008E5B19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				767D519B1FC9B56E008E5B19 /* weatherDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		767D519F1FC9B7EA008E5B19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				767D51A01FC9B7F6008E5B19 /* roundedViewClass.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767D51A11FC9B7F6008E5B19 /* roundedViewClass.swift in Sources */,
+				767D519C1FC9B56E008E5B19 /* weatherDataModel.swift in Sources */,
 				767D516C1FC9B0C2008E5B19 /* ViewController.swift in Sources */,
 				767D516A1FC9B0C2008E5B19 /* AppDelegate.swift in Sources */,
 			);
