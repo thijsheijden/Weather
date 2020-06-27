@@ -8,7 +8,7 @@
 import Foundation
 
 func requestForecast(location: (Double, Double), completion: @escaping (WeatherForecast) -> Void) {
-    if let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=\(location.0)&lon=\(location.1)&appid=ff1d31081f1b6a75d6c1148e948752fe") {
+    if let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=\(location.0)&lon=\(location.1)&appid=\(API_KEY)") {
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 do {

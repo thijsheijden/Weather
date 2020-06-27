@@ -87,7 +87,7 @@ struct ContentView: View {
                             // Wind speed HStack
                             HStack {
                                 Image(systemName: "wind")
-                                Text("\(String(viewModel.forecast.current.windSpeed)) m/s \(windDegreesToCompass(degrees: viewModel.forecast.current.windDeg))")
+                                Text("\(String(Double(round(10 * (viewModel.forecast.current.windSpeed * 3.6)) / 10))) km/h \(windDegreesToCompass(degrees: viewModel.forecast.current.windDeg))")
                             }
                             .padding()
                             
